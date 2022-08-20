@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>電卓アプリ</title>
+    <link rel="stylesheet" href="calc.css">
+    <script src="calc.js" defer></script>
+</head>
+<body>
+    <div class="calculator">
+        <input class="result" type="text" id="result" readonly="readonly">
+        <div class="operation">
+            <input class="operation__number" type="button" value="1" onclick="edit(this.value)">
+            <input class="operation__number" type="button" value="2" onclick="edit(this.value)">
+            <input class="operation__number" type="button" value="3" onclick="edit(this.value)">
+            <input class="operation__sign" type="button" value="+" onclick="edit(this.value)">
+        </div>
+        <div class="operation">
+            <input class="operation__number" type="button" value="4" onclick="edit(this.value)">
+            <input class="operation__number" type="button" value="5" onclick="edit(this.value)">
+            <input class="operation__number" type="button" value="6" onclick="edit(this.value)">
+            <input class="operation__sign" type="button" value="-" onclick="edit(this.value)">
+        </div>
+        <div class="operation">
+            <input class="operation__number" type="button" value="7" onclick="edit(this.value)">
+            <input class="operation__number" type="button" value="8" onclick="edit(this.value)">
+            <input class="operation__number" type="button" value="9" onclick="edit(this.value)">
+            <input class="operation__sign" type="button" value="/" onclick="edit(this.value)">
+        </div>
+        <div class="operation">
+            <input class="operation__number" type="button" value="0" onclick="edit(this.value)">
+            <input class="operation__number" type="button" value="." onclick="edit(this.value)">
+            <input class="operation__sign" type="button" value="*" onclick="edit(this.value)">
+            <input class="operation__reset" type="button" value="C" onclick="reset()">
+            <input class="operation__calc" type="button" value="=" onclick="calc()">
+        </div>
+    </div>
+</body>
+</html>
